@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plataforma de Jogos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Plataforma de Jogos</h1>
+      <nav>
+        <ul>
+          <li><a href="#map">Mapa</a></li>
+          <li><a href="#filter">Busca</a></li>
+          <li><a href="#community">Comunidade</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="map">
+        <h2>Mapa Interativo</h2>
+        <div id="map-container">Mapa Interativo Aqui</div>
+      </section>
+
+      <section id="filter">
+        <h2>Encontre o Local Perfeito</h2>
+        <form id="search-form">
+          <label for="sport">Esporte:</label>
+          <select id="sport" name="sport">
+            <option value="futebol">Futebol</option>
+            <option value="volei">Vôlei</option>
+            <option value="tenis">Tênis</option>
+          </select>
+          <label for="distance">Distância:</label>
+          <input
+            type="number"
+            id="distance"
+            name="distance"
+            placeholder="Em km"
+          />
+          <button type="button" id="search-btn">Buscar</button>
+        </form>
+        <div id="results"></div>
+      </section>
+
+      <section id="community">
+        <h2>Comunidade</h2>
+        <textarea
+          id="community-post"
+          placeholder="Compartilhe algo com a comunidade..."
+        ></textarea>
+        <button type="button" id="post-btn">Publicar</button>
+        <div id="posts"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Plataforma de Jogos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
